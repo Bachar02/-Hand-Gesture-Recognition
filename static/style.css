@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f6f9fc, #e3f2fd);
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.video-section {
+    flex: 1 1 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.video-frame {
+    width: 100%;
+    max-width: 640px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#video-feed {
+    width: 100%;
+    display: block;
+}
+
+.prediction-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.prediction-box h2 {
+    margin-bottom: 10px;
+    color: #2980b9;
+}
+
+#prediction-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #16a085;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* .btn:hover {
+    background-color: #2980b9;
+} */
+
+.info-panel {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    display: inline-block; /* This makes it wrap only its content */
+    max-width: 100%;        /* Prevents overflow */
+}
+
+.info-panel h2 {
+    color: #34495e;
+}
+
+.info-panel ul {
+    padding-left: 20px;
+}
+
+.info-panel li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.disabled {
+    background-color: #7f8c8d;
+}
+
+.disabled:hover {
+    cursor: not-allowed;
+}

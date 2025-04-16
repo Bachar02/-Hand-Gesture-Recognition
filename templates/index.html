@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖐️ Hand Gesture Recognition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .tech-icons {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .tech-icons img {
+            height: 40px;
+            transition: transform 0.2s ease;
+        }
+        .tech-icons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖐️ Hand Gesture Recognition</h1>
+            <p class="subtitle">Real-time prediction using AI</p>
+        </header>
+
+        <main class="main-content">
+            <div class="video-section">
+                <div class="video-frame">
+                    <img src="{{ url_for('video_feed') }}" id="video-feed" alt="Live Feed">
+                </div>
+                <div class="prediction-box">
+                    <h2>Gesture Detected:</h2>
+                    <div id="prediction-text">Waiting for hand...</div>
+                    <button id="start-btn" class="btn">Start Recognition</button>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <h2>Tech Used:</h2>
+                <ul>
+                    <li>📷 <strong>MediaPipe</strong> for hand detection</li>
+                    <li>🤖 <strong>Scikit-learn</strong> for gesture classification</li>
+                    <li>🌐 <strong>Flask</strong> for the web interface</li>
+                </ul>
+
+                <div class="tech-icons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" title="Scikit-learn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" alt="Flask" title="Flask">
+                    <img src="https://th.bing.com/th/id/OIP.zzCIB_4GdTt-sCYix8bnjgHaB0?w=305&h=85&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="MediaPipe" title="MediaPipe"> 
+                </div>
+                
+                <h2>Gestures that could be captured:</h2>
+                <ul>
+                    <li><strong>call</strong></li>
+                    <li><strong>dislike</strong></li>
+                    <li><strong>fist</strong></li>
+                    <li><strong>four</strong></li>
+                    <li><strong>like</strong></li>
+                    <li><strong>mute</strong></li>
+                    <li><strong>ok</strong></li>
+                    <li><strong>one</strong></li>
+                    <li><strong>palm</strong></li>
+                    <li><strong>peace</strong></li>
+                    <li><strong>peace_inverted</strong></li>
+                    <li><strong>rock</strong></li>
+                    <li><strong>stop_inverted</strong></li>
+                    <li><strong>stop</strong></li>
+                    <li><strong>three</strong></li>
+                    <li><strong>three2</strong></li>
+                    <li><strong>two_up</strong></li>
+                    <li><strong>two_up_inverted</strong></li>
+                    
+                </ul>
+
+                
+            </div>
+        </main>
+
+        <footer>
+            <p>© By Bouguerra Zina Bachar AKA al bachir</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
